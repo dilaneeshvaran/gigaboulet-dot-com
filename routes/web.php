@@ -15,4 +15,7 @@ use App\Http\Controllers\ClientController;
 */
 
 
-Route::get('/', [ClientController::class,'home']);
+Route::get('/', [ClientController::class, 'acceuil']);
+Route::get('/blog', [ClientController::class, 'blog']);
+Route::get('/contact', [ClientController::class, 'contact']);
+Route::get('/about', [ClientController::class, 'about']);

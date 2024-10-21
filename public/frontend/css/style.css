@@ -61,7 +61,7 @@
 @media screen and (min-width: 968px) {
     :root {
         --big-font-size: 3rem;
-        --h1-font-size: 6.4rem;
+        --h1-font-size: 3.2rem;
         --h2-font-size: 1.5rem;
         --h3-font-size: 1.25rem;
         --normal-font-size: 62.5%;
@@ -158,6 +158,137 @@ img {
 
 /*==================== NAV ====================*/
 
+/*==================== NAVBAR HEADER ====================*/
+header {
+  background-color: none;
+  /* padding: 2.5em; */
+}
+
+.hero{
+  /* background: url("images/herobg.png"); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+nav {
+  position: fixed;
+  right: -100%;
+  top: 0;
+  width: 50%;
+  background: #FFF;
+  height: 100vh;
+  z-index: 2;
+  transition: right .5s ease-in-out;
+  padding: 3.6em;
+}
+/* nav ul li a {
+font-size: 1.8rem;
+color: #FFF;
+} */
+
+.menu-btn {
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+}
+
+.open {
+  right: 0%;
+}
+.close {
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+  margin-bottom: 6.6em;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+/*   margin:1em; */
+}
+
+a.logo {
+  color: #0460BC;
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 3.5em;
+}
+
+ul li a {
+  font-size: 1.8rem;
+  color: #000000;
+}
+
+ul li a.active {
+  font-weight: bold;
+}
+
+ul li a:hover {
+  color: #00CE79;
+}
+
+a.cart {
+  background-color: #00CE79;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  color: black;
+  font-size: 1.8rem;
+  padding: 1rem;
+  border-radius: .4rem;
+}
+
+a.cart p {
+  margin: 0;
+}
+
+a.cart:hover {
+  background-color: #03B169;
+}
+
+.mobile-cart-menu {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+@media screen and (max-width: 600px) {
+.cart{
+  display: none;
+}
+}
+@media screen and (min-width: 600px) {
+  .menu-btn, .close {
+      display: none;
+  }
+
+  nav {
+      position: unset;
+      height: auto;
+      background: none;
+      padding: 0;
+      width: auto;
+  }
+  ul {
+      flex-direction: row;
+  }
+}
+
+
 
 /* show menu */
 
@@ -169,8 +300,114 @@ img {
 
 
 /*==================== HOME ====================*/
+/*==================== FOOTER ====================*/
+.grid-footer{
+  display: grid;
+  /* gap: 1.5rem; */
+}
+.footer{
+  padding-top: 2rem;
+}
+
+.footer__container{
+  /* row-gap: 3.5rem; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+
+}
+
+.footer__bg{
+  background-color: #252E2A;
+  padding: 2rem 0 3rem;
+}
+
+.footer__title{
+  font-size: var(--h1-font-size);
+  margin-bottom: var(--mb-0-25);
+}
+
+.footer__subtitle{
+  font-size: var(--small-font-size);
+}
+
+.footer__links{
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+}
+
+.footer__link:hover{
+  color: var(--first-color-lighter);
+}
+
+.footer__social{
+  font-size: 1.25rem;
+  margin-right: var(--mb-1-5);
+}
+
+.footer__social:hover{
+  color: var(--first-color-lighter);
+}
+
+.footer__copy{
+  font-size: var(--p-font-size);
+  text-align: center;
+  color: var(--text-color-light);
+  margin-top: var(--mb-3);
+}
+
+.footer__title,
+.footer__subtitle,
+.footer__link,
+.footer__social{
+  color: #ffffff;
+}
+@media screen and (min-width: 568px){
+ 
+  .footer__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media screen and (min-width: 768px){
 
 
+  .footer__container{
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 1rem;
+  }
+  .footer__bg{
+    padding: 3rem 0 3.5rem;
+  }
+  .footer__links{
+    flex-direction: row;
+    column-gap: 2rem;
+  }
+  .footer__socials{
+    justify-self: flex-end;
+  }
+
+  .footer__copy{
+    margin-top: 4.5rem;
+  }
+}
+@media screen and (min-width: 1024px){
+  .header,
+  .main,
+  .footer__container{
+    padding: 0;
+  }
+
+}
+.wrapper{
+  max-width:1200px;
+  margin:0 auto;
+}
 /*==================== ABOUT ====================*/
 
 
