@@ -1,0 +1,54 @@
+.blog-container {
+    display: flex;
+}
+
+.sidebar {
+    width: 20%;
+    padding: 1rem;
+    background-color: #f4f4f4;
+}
+
+.sidebar h2 {
+    margin-top: 0;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 0.5rem 0;
+    cursor: pointer;
+}
+
+.blog-main {
+    width: 80%;
+    padding: 1rem;
+}
+
+.post {
+    margin-bottom: 2rem;
+}
+
+.post img {
+    max-width: 100%;
+    height: auto;
+}
+
+.post h2 {
+    margin: 0.5rem 0;
+}
+
+.post p {
+    margin: 0.5rem 0;
+}
+
+.post a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.post a:hover {
+    text-decoration: underline;
+}
