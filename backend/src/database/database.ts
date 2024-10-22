@@ -11,5 +11,5 @@ export const AppDataSource = new DataSource({
   synchronize: true,
   entities: ["src/database/entities/*.ts"],
   migrations: ["src/database/migrations/*.ts"],
-  driver: require('mysql2'),  
+  driver: require('mysql2'),
 });
