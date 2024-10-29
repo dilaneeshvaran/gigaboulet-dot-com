@@ -27,8 +27,14 @@ nav ul li a {
     text-decoration: none;
 }
 
+nav ul li a:hover {
+    color: #ddd;
+}
+
 main {
     padding: 2rem;
+    max-width: 800px;
+    margin: auto;
 }
 
 section {
