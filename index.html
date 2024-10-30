@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Derniers articles sur la technologie et gadgets, par Gigaboulet.">
-    <meta name="keywords" content="Gigaboulet, blog technologie, gadgets, high-tech, science, tendances">
-    <meta name="author" content="Équipe Gigaboulet">
-    <title>Gigaboulet - Actualités High-Tech et Science</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta name="description" content="Découvrez l'histoire fascinante des boulets de canon, leur impact sur l'histoire militaire française et mondiale. Articles, photos et analyses sur Gigaboulet.">
+    <meta name="keywords" content="boulets de canon, artillerie historique, histoire militaire française, canons historiques, boulets, artillerie napoleonienne">
+    <meta name="author" content="Gigaboulet">
+    <title>Gigaboulet - L'Histoire des Boulets de Canon | Histoire Militaire Française</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="/favicon.ico" />
 </head>
-
 <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T63K4QVKHY"></script>
 <script>
@@ -19,101 +18,48 @@
     gtag('js', new Date());
     gtag('config', 'G-T63K4QVKHY');
 </script>
-
 <body>
     <header>
-        <h1>Gigaboulet.com</h1>
+        <div class="header-bg"></div>
+        <div class="header-content">
+            <h1>Gigaboulet</h1>
+            <p>L'histoire fascinante des boulets de canon à travers les âges</p>
+        </div>
     </header>
 
+    <nav>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="histoire.html">Histoire</a></li>
+            <li><a href="types.html">Types de Boulets</a></li>
+            <li><a href="collections.html">Collections</a></li>
+            <li><a href="actualites.html">Actualités</a></li>
+        </ul>
+    </nav>
+
     <main>
-        <section id="intro">
-            <h2>Tendances High-Tech et Science</h2>
-            <p>Découvrez des actualités et avis fiables sur la technologie et la Science, par Gigaboulet.</p>
+        <section class="hero">
+            <h2>Explorez l'Histoire de l'Artillerie</h2>
+            <p>Des boulets de canon médiévaux aux projectiles de la Renaissance, découvrez l'évolution de l'artillerie française et mondiale.</p>
         </section>
 
         <section id="articles">
-            <h2>Derniers Articles sur la Technologie et la Science</h2>
-            <form class="search-form" action="">
-                <label for="search-input">Recherche d'articles</label>
-                <input id="search-input" class="search-input" type="text" placeholder="Entrez un sujet" />
-                <input class="search-submit" type="submit" value="Rechercher" />
+            <h2>Articles et Découvertes</h2>
+            <form class="search-form" action="actualites.html" method="GET">
+                <label for="search-input" class="visually-hidden">Recherche d'articles</label>
+                <input id="search-input" class="search-input" type="text" name="q" placeholder="Rechercher dans notre collection d'articles..." />
+                <button class="search-submit" type="submit">Rechercher</button>
             </form>
 
             <div id="loading-message" style="display: none; text-align: center;">Chargement...</div>
             <div class="articles-container">
-                <ul class="article-list"></ul>
+                
             </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Gigaboulet. Tous droits réservés.</p>
+        <p>&copy; 2024 Gigaboulet - L'histoire des boulets de canon. Tous droits réservés.</p>
     </footer>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const API_BASE_URL = "https://api.webz.io/newsApiLite?token=e28d92b5-d365-48d8-b09d-b245fd086676&q=";
-            const articlesContainer = document.querySelector(".articles-container");
-            const searchForm = document.querySelector(".search-form");
-            const searchInput = document.getElementById("search-input");
-            const loadingMessage = document.getElementById("loading-message");
-
-            searchForm.addEventListener("submit", (event) => {
-                event.preventDefault();
-                const searchQuery = searchInput.value.trim();
-                if (searchQuery) {
-                    fetchArticles(searchQuery);
-                }
-            });
-
-            async function fetchArticles(query) {
-                const API_URL = `${API_BASE_URL}language:french AND ${encodeURIComponent(query)}`;
-                
-                loadingMessage.style.display = "block";
-                articlesContainer.innerHTML = "";
-
-                try {
-                    const response = await fetch(API_URL);
-                    const data = await response.json();
-                    loadingMessage.style.display = "none";
-
-                    if (data.posts) {
-                        displayArticles(data.posts);
-                    } else {
-                        articlesContainer.innerHTML = "<p>Aucun article trouvé.</p>";
-                    }
-                } catch (error) {
-                    console.error("Erreur lors de la récupération des articles :", error);
-                    articlesContainer.innerHTML = "<p>Erreur lors du chargement des articles.</p>";
-                    loadingMessage.style.display = "none";
-                }
-            }
-
-            function displayArticles(articles) {
-                articlesContainer.innerHTML = "";
-                articles.forEach((article) => {
-                    const articleElement = document.createElement("div");
-                    articleElement.className = "article-item";
-
-                    const title = document.createElement("h3");
-                    title.textContent = article.title;
-
-                    const text = document.createElement("p");
-                    text.textContent = `${article.text.slice(0, 150)}...`;
-
-                    const showMoreLink = document.createElement("a");
-                    showMoreLink.textContent = "Voir Plus";
-                    showMoreLink.href = article.url;
-                    showMoreLink.target = "_blank";
-                    showMoreLink.className = "show-more-link";
-
-                    articleElement.append(title, text, showMoreLink);
-                    articlesContainer.appendChild(articleElement);
-                });
-            }
-
-            fetchArticles("language:french AND category:\"Science and Technology\"");
-        });
-    </script>
 </body>
 </html>
