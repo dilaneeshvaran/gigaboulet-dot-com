@@ -1,0 +1,1957 @@
+/*==================== GOOGLE FONTS ====================*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&family=Poller+One&display=swap');
+
+/*==================== VARIABLES CSS ====================*/
+:root {
+  --header-height: 3rem;
+
+  /*========== Colors ==========*/
+  /* Change favorite color */
+  --hue-color: 0;
+  /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
+
+  /* HSL color mode */
+  --first-color: hsl(var(--hue-color), 71%, 73%);
+  --first-color-second: hsl(var(--hue-color), 69%, 61%);
+  --first-color-alt: hsl(var(--hue-color), 57%, 53%);
+  --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
+  --title-color: #E5E5E5;
+  --text-color: hsl(var(--hue-color), 8%, 45%);
+  --text-color-light: hsl(var(--hue-color), 8%, 65%);
+  --input-color: hsl(var(--hue-color), 70%, 96%);
+  --body-color: hsl(0, 1%, 13%);
+  --container-color: #fff;
+  --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
+  --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
+  --p-font-color: #f3f3fa;
+  /*========== Font and typography ==========*/
+  --body-font: "Montserrat", sans-serif;
+
+  /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
+  --big-font-size: 4rem;
+  --h1-font-size: 3.2rem;
+  --h2-font-size: 1.30rem;
+  --h3-font-size: 3.5rem;
+  --h5-font-size: 2rem;
+  --normal-font-size: 62.5%;
+  --small-font-size: 1.5rem;
+  --smaller-font-size: .75rem;
+  --p-font: 1.9rem;
+  /*========== Font weight ==========*/
+  --font-medium: 500;
+  --font-semi-bold: 600;
+
+
+
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+  --z-modal: 1000;
+  /*========== LAYOUT==========*/
+  /* --body-max-width:700px; */
+  --contater-moi-banner-height:13.3rem;
+  --contater-moi-banner-height-s:40.3rem;
+
+}
+
+/* Font size for large devices */
+@media screen and (min-width: 1200px) {
+  :root {
+    --big-font-size: 6.4rem;
+    --h1-font-size: 3.2rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 3.5rem;
+    --normal-font-size: 62.5%;
+    --small-font-size: 1.4rem;
+    --smaller-font-size: .813rem;
+    --body-max-width: 119.9rem;
+    --p-font: 1.6rem;
+    --h5-font-size: 2.9rem;
+    --contater-moi-banner-height:30rem;
+    --contater-moi-banner-height-s:50.5rem;
+
+  }
+}
+
+/*========== Variables Dark theme ==========*/
+
+
+/*========== Button Dark/Light ==========*/
+
+
+/*==================== BASE ====================*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: var(--normal-font-size);
+
+}
+
+body {
+  margin: 0;
+  font-family: var(--body-font);
+  background-color: var(--body-color);
+  color: var(--text-color);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+}
+h1{
+  font-size:var(--h1-font-size) ;
+  font-weight: var(--font-semi-bold);
+}
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+section.section_title h1 {
+  font-size: 2.6rem;
+  margin: 0px;
+  color: #ffffff;
+  font-weight: 700;
+  text-align: center;
+  padding: 3.5rem 0;
+
+}
+
+section.section_title_left h1 {
+  font-size: 2.6rem;
+  margin: 0px;
+  color: #ffffff;
+  font-weight: 700;
+  padding: 3.5rem 0;
+
+}
+
+#title {
+  color: #ffffff;
+  font-weight: 700;
+  padding: 0;
+
+}
+
+
+section.section_title h1 {
+  font-size: 3.2rem;
+  margin: 0px;
+  color: #ffffff;
+  font-weight: 700;
+  text-align: center;
+  padding: 35px 0;
+
+}
+
+section.section_title_left h1 {
+  font-size: 3.2rem;
+  margin: 0px;
+  color: #ffffff;
+  font-weight: 700;
+
+}
+
+
+
+@media screen and (min-width: 700px) {
+  section.section_title h1 {
+    font-size: 3.6rem;
+    margin: 0px;
+    padding: 6rem 0;
+
+  }
+
+  section.section_title_left h1 {
+    font-size: 3.6rem;
+    margin: 0px;
+    padding: 6rem 0;
+    text-align: center;
+
+
+  }
+}
+
+@media screen and (min-width: 700px) {
+  section.section_title h1 {
+    font-size: 3.6rem;
+    margin: 0px;
+    padding: 2rem 0;
+
+  }
+
+  section.section_title_left h1 {
+    font-size: 3.6rem;
+    margin: 0px;
+    padding: 2rem 0;
+    text-align: center;
+
+
+  }
+}
+/*==================== REUSABLE CSS CLASSES ====================*/
+.section {
+  padding: 2rem 0 4rem;
+}
+
+.section__title {
+  font-size: var(--h1-font-size);
+  color: var(--title-color);
+}
+
+.section__subtitle {
+  display: block;
+  font-size: var(--small-font-size);
+  margin-bottom: var(--mb-3);
+}
+
+.section__title, 
+.section__subtitle {
+  text-align: center;
+}
+
+/*==================== LAYOUT ====================*/
+.wrapper, .footer__container  {
+  max-width: var(--body-max-width);
+  margin: 0 auto;
+  p{
+    font-weight: 300;
+    color: #EBECED;
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .wrapper, .footer__container  {
+
+    padding:0 2rem ;
+  }
+}
+
+.grid {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+  background-color: var(--body-color);
+}
+
+/*==================== NAV ====================*/
+/*==================== NAVBAR HEADER ====================*/
+header {
+  background-color: none;
+  /* padding: 2.5em; */
+  margin:  4.5rem 0;
+}
+
+.hero{
+  background: url("images/herobg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+nav {
+  position: fixed;
+  right: -100%;
+  top: 0;
+  width: 50%;
+  background: var(--body-color);
+  height: 100vh;
+  z-index: 2;
+  transition: right .5s ease-in-out;
+  padding: 4.6em;
+}
+
+
+.menu-btn {
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+}
+
+.open {
+  right: 0%;
+}
+.close {
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+  margin-bottom: 6.6em;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+/*   margin:1em; */
+}
+
+.cart p{
+  font-size: 1.9rem;
+  color: #FFF;
+}
+a.logo {
+  color: #0460BC;
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 3.5em;
+}
+.footer__container .footer__links ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1em;
+}
+.footer__links ul li a {
+  font-size: var(--small-font-size);
+  color: #DDDD;
+}
+ul li a {
+  font-size: 1.8rem;
+  color: #DDDD;
+}
+
+ul li a.active {
+  font-weight: bold;
+}
+
+ul li a:hover {
+  color: var(--first-color);
+
+}
+
+/* a.cart {
+  background-color: none;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  color: var(--text-color-light);
+  font-size: 1.8rem;
+  padding: 1rem;
+  border-color:#910404 ;
+  border-radius: .4rem;
+  border-style: solid;
+  font-weight: 700;
+} */
+a.cart:hover{
+  color: black;
+
+}
+a.cart p {
+  margin: 0;
+}
+
+a.cart:hover {
+  background-color: var(--first-color-lighter);
+
+}
+
+.mobile-cart-menu {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+
+.logo div.svg{
+  background: url("/frontend/asset/logo-mobile.svg");
+  width:14.6rem;
+  height:2rem;
+}
+@media screen and (max-width: 745px) {
+.cart{
+  display: none;
+}
+.footer__container .footer__links ul {
+
+  align-items: center;
+}
+}
+@media screen and (min-width: 745px) {
+    .logo div.svg{
+        background: url("/frontend/asset/logo.svg");
+        width:25.7rem;
+        height:3.3rem;
+      }
+  .menu-btn, .close {
+      display: none;
+  }
+
+  nav {
+      position: unset;
+      height: auto;
+      background: none;
+      padding: 0;
+      width: auto;
+  }
+  ul {
+      flex-direction: row;
+  }
+}
+
+.wrapper{
+  margin: 0 auto;
+  max-width: var();
+}
+
+/* show menu */
+
+
+/* Active link */
+
+
+/* Change background header */
+.section_content{
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin:  50px 0;
+  flex-wrap: wrap;
+}
+
+.mobile-cart-menu a.cart {
+  color: #FFFFFF;
+  font-weight: 700;
+  font-family: poppins;
+  background-color: #910404;
+  padding: 1rem;
+  /* max-width:200px; */
+  height: 4.7rem;
+  font-size: 2rem;
+  border-radius: .8rem;
+
+}
+.mobile-cart-menu a.cart:hover {
+  color: #FFFFFF;
+  font-weight: 700;
+  font-family: poppins;
+  background-color: #660303;
+  padding: 1rem;
+  /* max-width:200px; */
+  height: 4.7rem;
+  font-size: 2rem;
+  border-radius: .8rem;
+
+}
+.mobile-cart-menu a.cart {
+  display: flex;
+  align-items: stretch;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+}
+.navbar .right{
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+/*==================== HERO SECTION ====================*/
+
+.left_col h1 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: var(--h1-font-size);
+  line-height: 48px;
+  color: #FFFF;
+}
+
+.left_col p {
+  font-family: 'Poppins';
+
+  font-style: normal;
+  font-weight: 300;
+  font-size: var(--p-font);
+  line-height: 24px;
+  color: #ffffff;
+}
+
+
+ input {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: var(--p-font);
+  line-height: 24px;
+  background-color: #534f4f;
+  padding: 10px;
+  width: 380px;
+  height: 50px;
+  border-radius: .8rem;
+  border-color: #BBA3A3
+}
+
+ form {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.hero_section_content .left_col {
+  display: flex;
+  gap: 2.5rem;
+  flex-direction: column;
+}
+.hero_section_content  {
+  h3{
+    font-size: 2rem;
+    color: #FFF;
+  }
+
+  }
+
+@media screen and (max-width: 600px) {
+  .hero_section_content {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+    padding: 3rem 0;
+
+  }
+
+ form {
+    display: flex;
+    align-items: stretch;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .hero_section_content .right_col {
+    background: url("asset/hero-mobile.svg");
+    width: 33.8rem;
+    height: 33.2rem;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .hero_section_content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+
+  }
+  .section_content{
+    gap: 13rem;
+  }
+  .hero_section_content .left_col {
+    max-width: 570px;
+  }
+
+  .hero_section_content .right_col {
+    background: url("asset/hero.svg");
+    width: 62.9rem;
+    height: 57.2rem;
+  }
+}
+
+/*==================== POURQUOI SECTION ====================*/
+
+/* LAYOUT */
+section.pourquoi_section .pourquoi_section_content {
+  margin: 0 auto;
+  margin-bottom: 2rem;
+
+}
+
+section.pourquoi_section .pourquoi_section_content .left_col {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  max-width: 55.1rem;
+  align-items: center;
+}
+
+section.pourquoi_section .pourquoi_section_content h2 {
+  font-size: var(--h3-font-size);
+  margin-bottom: 4rem;
+  font-weight: 700;
+}
+.formulaire , .formulaire form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  }
+
+@media screen and (min-width: 1100px) {
+
+  section.pourquoi_section .pourquoi_section_content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+  }
+
+  section.pourquoi_section .pourquoi_section_content .left_col {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: flex-start;
+    width: 59rem;
+    gap: 6.7rem;
+
+  }
+
+  .pourquoi_section_content .right_col {
+    background: url("images/photogroupe.avif");
+    width: 60.8rem;
+    height: 33.5rem;
+    position: initial;
+    top: 0%;
+    background-position: center;
+    background-size: cover;
+    border-radius: 8px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .pourquoi_section_content .right_col {
+    margin: 0 auto;
+    background: url("images/photogroupe.avif");
+    width: 34.1rem;
+    height: 32.9rem;
+    position: initial;
+    top: 0%;
+    background-position: center;
+    background-size: cover;
+    border-radius: 8px;
+  }
+
+  section.pourquoi_section .pourquoi_section_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  section.pourquoi_section .pourquoi_section_content {
+    max-width: 65rem;
+  }
+}
+
+
+
+
+/*==================== AVANTAGE  ====================*/
+.avantage_section_content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.avantage_section_content .item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+  max-width: 22.9rem;
+  height: 21.3rem;
+}
+
+.avantage_section_content .item .svg {
+  width: 6.5rem;
+  height: 5.6rem;
+}
+
+.avantage_section_content .item:nth-child(1) .svg {
+  background: url("/frontend/asset/mixite.svg");
+  background-repeat: no-repeat;
+}
+
+.avantage_section_content .item:nth-child(2) .svg {
+  background: url("/frontend/asset/disponibilite.svg");
+  background-repeat: no-repeat;
+  height: 6.4rem;
+}
+
+.avantage_section_content .item:nth-child(3) .svg {
+  background: url("/frontend/asset/integriter.svg");
+  background-repeat: no-repeat;
+  width: 8rem;
+  height: 6rem;
+}
+
+@media screen and (min-width: 1100px) {
+  .avantage_section_content {
+    display: flex;
+    flex-direction: row;
+    gap: 17rem;
+    justify-content: space-around;
+    align-items: center;
+    padding: 7rem 0;
+  }
+
+  .avantage_section_content p {
+    font-size: 1.4rem;
+    color: #F1F0EC;
+  }
+}
+
+/*==================== testimony  ====================*/
+.testimony_section_content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* flex-direction: column; */
+  align-items: center;
+  gap: 3rem;
+}
+
+.testimony_section_content .item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+  max-width: 34.3rem;
+  height: 36.5rem;
+  background: #171717;
+}
+
+.testimony_section_content .item .img {
+  width: 11.8rem;
+  height: 11.3rem;
+}
+
+.testimony_section_content .item p:before {
+  content: "“";
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 78px;
+  /* identical to box height */
+  text-align: center;
+  color: #2B2B2B;
+}
+
+
+
+.testimony_section_content .item:nth-child(1) .img {
+  background: url("/frontend/images/faby.png");
+  background-repeat: no-repeat;
+
+}
+
+.testimony_section_content .item:nth-child(2) .img {
+  background: url("/frontend/images/faby.png");
+  background-repeat: no-repeat;
+}
+
+.testimony_section_content .item:nth-child(3) .img {
+  background: url("/frontend/images/faby.png");
+  background-repeat: no-repeat;
+
+}
+
+
+
+
+
+@media screen and (min-width: 1100px) {
+  .testimony_section_content {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .testimony_section_content p {
+    font-size: 1.4rem;
+    color: #F1F0EC;
+  }
+}
+
+/*==================== Saisson  GALETRY ===================*/
+
+.saison_section_content .malta2023{
+  max-width: 1081px;
+}
+
+
+.saison_section_content  .malta2023 .item {
+  /* background-size: fit; */
+  height: 31.5rem;
+  width: 34.1rem;
+  background-repeat: no-repeat;
+}
+.saison_section_content .malta2023 .item:nth-child(1) {background: url("/frontend/images/photo1.jpg");  background-repeat: no-repeat;display: none;}
+.saison_section_content .malta2023 .item:nth-child(2) {background: url("/frontend/images/photo1.jpg");  background-repeat: no-repeat;}
+.saison_section_content .malta2023 .item:nth-child(3) {background: url("/frontend/images/photo3.jpg");background-repeat: no-repeat;}
+.saison_section_content .malta2023 .item:nth-child(4) {background: url("/frontend/images/photo4.jpg");background-repeat: no-repeat;}
+.saison_section_content .malta2023 .item:nth-child(5) {background: url("/frontend/images/photo5.jpg");background-repeat: no-repeat;}
+
+
+@media only screen and (min-width: 790px) {
+
+  .saison_section_content  .malta2023 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3,1fr);
+  }
+  .saison_section_content .malta2023 .item:nth-child(1) {background: url("/frontend/images/photo2.webp");  background-repeat: no-repeat;
+    height: 61.8rem;
+    width: 40rem;
+    display: block;
+  }
+  .saison_section_content  .malta2023 .item {
+      height: auto;
+  }
+
+  .saison_section_content  .malta2023 .item:nth-of-type(1) { 
+      grid-row: 1 / 3;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .saison_section_content  .malta2023 .item:nth-of-type(1) { 
+      grid-row: unset;
+  }
+  .saison_section_content  .malta2023 .item:nth-of-type(1) { 
+    grid-row: 1 / 3;
+  }
+  .saison_section_content  .malta2023{
+      height: 61.8rem;
+      display: grid; 
+      grid-template-columns: repeat(3, 1fr); 
+      grid-template-rows: repeat(2, 1fr); 
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .saison_section_content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+p {
+  line-height: 1.5em;
+}
+
+.saison_section a {
+  position: initial;
+  top: 0%;
+  background-position: center;
+  background-size: cover;
+  border-radius: 8px;
+}
+
+.saison_section a:nth-child(1) {
+  background-image: url('/frontend/images/hiver.avif');
+}
+
+.saison_section a:nth-child(2) {
+  background-image: url('/frontend/images/dubail (1).avif');
+}
+
+.saison_section a:nth-child(3) {
+  background-image: url('/frontend/images/zanzibar.avif');
+}
+
+.saison_section a:nth-child(1):hover {
+  background: linear-gradient(180deg, rgb(0 0 0 / 15%) 0.25%, rgba(249, 19, 19, 0.06) 90.58%), url('/frontend/images/hiver.avif');
+  position: initial;
+  top: 0%;
+  background-position: center;
+  background-size: cover;
+  border-radius: 8px;
+}
+.saison_section a:nth-child(2):hover {
+  background: linear-gradient(180deg, rgb(0 0 0 / 20%) 0.25%, rgba(249, 19, 19, 0.06) 90.58%), url('/frontend/images/dubail (1).avif');
+  position: initial;
+  top: 0%;
+  background-position: center;
+  background-size: cover;
+  border-radius: 8px;
+}
+.saison_section a:nth-child(3):hover {
+  background: linear-gradient(180deg, rgb(0 0 0 / 30%) 0.25%, rgba(249, 19, 19, 0.06) 90.58%), url('/frontend/images/zanzibar.avif');
+  position: initial;
+  top: 0%;
+  background-position: center;
+  background-size: cover;
+  border-radius: 8px;
+}
+.saison_section card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 31.2rem;
+  height: 41.4rem;
+  object-fit: fill;
+  padding: 2.3rem;
+}
+
+.saison_section card h1 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 54px;
+  /* identical to box height */
+  color: #FFFFFF;
+  text-align: left;
+
+}
+
+.saison_section_content p {
+  display: none;
+}
+
+.saison_section card:hover p {
+  display: flex;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 3rem;
+  /* identical to box height */
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.saison_section card:hover,
+.saison_section card:hover h1 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: #FFFFFF;
+}
+section.espace {
+  text-align: center;
+}
+
+/*==================== Saisson  ====================*/
+.saison_section_content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.saison_section_content .malta23{
+  max-width: 1082px;
+  margin: 7em auto 0;
+}
+
+
+.saison_section_content  .malta23 .item {
+  height: 31.5rem;
+  width: 34.1rem;
+  background-repeat: no-repeat;
+  object-fit: fill;
+  background-position: center;
+}
+.saison_section_content .malta23 .item:nth-child(1) {background: url("/frontend/images/photo1.jpg");  background-repeat: no-repeat;display: none;}
+.saison_section_content .malta23 .item:nth-child(2) {background: url("/frontend/images/photo10.jpg");  background-repeat: no-repeat;}
+.saison_section_content .malta23 .item:nth-child(3) {background: url("/frontend/images/photo7.jpg");background-repeat: no-repeat;}
+.saison_section_content .malta23 .item:nth-child(4) {background: url("/frontend/images/photo8.jpg");background-repeat: no-repeat;}
+.saison_section_content .malta23 .item:nth-child(5) {background: url("/frontend/images/photo9.jpg");background-repeat: no-repeat;}
+
+
+@media only screen and (min-width: 790px) {
+
+  .saison_section_content  .malta23 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3,1fr);
+  }
+  .saison_section_content .malta23 .item:nth-child(1) {background: url("/frontend/images/photo6.jpg");  background-repeat: no-repeat;
+    height: 61.8rem;
+    width: 40rem;
+    display: block;
+  }
+  .saison_section_content  .malta23 .item {
+      height: auto;
+  }
+  .saison_section_content  .malta23 .item:nth-of-type(1) { 
+      grid-row: 1 / 3;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+
+  .saison_section_content  .malta23 .item:nth-of-type(1) { 
+      grid-row: unset;
+  }
+  .saison_section_content  .malta23 .item:nth-of-type(1) { 
+    grid-row: 1 / 3;
+  }
+  .saison_section_content  .malta23{
+      height: 61.8rem;
+      display: grid; 
+      grid-template-columns: repeat(3, 1fr); 
+      grid-template-rows: repeat(2, 1fr); 
+  }
+}
+
+/*==================== Saisson SKI  ====================*/
+
+.saison_section_content .ski23{
+  max-width: 1200px;
+}
+.saison_section_content  .ski23 .item {
+  height: 31.5rem;
+  width: 34.1rem;
+  background-repeat: no-repeat;
+  object-fit: fill;
+  background-position: center;
+}
+.saison_section_content .ski23 .item:nth-child(1) {background: url("/frontend/images/photo11.jpg");  background-repeat: no-repeat;display: none;}
+.saison_section_content .ski23 .item:nth-child(2) {background: url("/frontend/images/photo12.jpg");  background-repeat: no-repeat;}
+.saison_section_content .ski23 .item:nth-child(3) {background: url("/frontend/images/photo13.jpg");background-repeat: no-repeat;}
+.saison_section_content .ski23 .item:nth-child(4) {background: url("/frontend/images/photo14.jpg");background-repeat: no-repeat;}
+.saison_section_content .ski23 .item:nth-child(5) {background: url("/frontend/images/photo15.jpg");background-repeat: no-repeat;}
+.saison_section_content .ski23 .item:nth-child(6) {background: url("/frontend/images/photo16.jpg");background-repeat: no-repeat;}
+
+
+@media only screen and (min-width: 790px) {
+  .saison_section_content  .ski23 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2,1fr);
+      height: 643px;
+  }
+  .saison_section_content .ski23 .item:nth-child(1) {background: url("/frontend/images/photo11.jpg");  background-repeat: no-repeat;
+    display: block;
+  }
+  .saison_section_content  .ski23 .item {
+      height: auto;
+  }
+}
+@media only screen and (min-width: 790px) {
+.saison_section_content  .ski23 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+}
+/*==================== CONTACT ====================*/
+
+  .contact_section_content {
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  @media screen and (min-width: 1200px) {
+    .contact_section_content  {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+  
+      gap: 8rem;
+      margin-bottom: 2rem;
+    }
+  }
+  .contact_section_content h4{
+      color: #FFF;
+      font-family: "Poppins";
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      letter-spacing: 0px;
+  }
+  .contact_section_content p{
+    color: #B2B2B2;
+    font-family: "poppins";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0px;
+  }
+  .contact_section_content .right_col{
+    color:#FFF ;
+    font-family: "poppins";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0px;
+    text-align: left;
+  }
+  .contact_section_content .right_col form{
+    display: flex;
+    flex-direction: column;
+    gap:3rem ;
+    align-items: center;
+  }
+
+  .btn-outline-warning,form button,.btn
+{
+    color: #FFFFFF;
+    font-weight: 400;
+    font-family: poppins;
+    background: #910404;
+    padding: 1rem;
+    width: 100%;
+    height: auto;
+    font-size: 2rem;
+    border-radius: .8rem;
+    border: #910404;
+  max-width: 25rem;  
+  }
+  
+button:hover{
+    color: #FFFFFF;
+    font-family: poppins;
+    background: #660303;
+    padding: 1rem;
+    width: 100%;
+    height: auto;
+    font-size: 2rem;
+    border-radius: .8rem;
+    border: #660303;
+    max-width: 25rem;  
+  }
+  form .element{
+    display: flex;
+    flex-direction: column;
+    gap:1rem ;
+  }
+
+  form .element input{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 50px;
+    border-radius: .6rem;
+    border: none;
+    background-color:#D9D9D9 ;
+    color: #000000;
+  }
+  form .element input:hover{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 50px;
+    border-radius: .6rem;
+    border: none;
+    background-color:#ffffff ;
+    color: #000000;
+  }
+  form .element textarea{
+    display: flex;
+    flex-direction: column;
+    border-radius: .6rem;
+    border: none;
+    background-color:#D9D9D9 ;
+    height: 16.6rem;
+    width: 300px;
+    padding: 1rem;
+
+  }
+  form .element textarea:hover{
+    display: flex;
+    flex-direction: column;
+    border-radius: .6rem;
+    border: none;
+    background-color:#ffffff ;
+    height: 16.6rem;
+    width: 300px;
+    color: #000000;
+  }
+  .contact_section_content .left_col h3 {
+    font-size: var(--h3-font-size);
+    font-weight: 700;
+    color: #FFF;
+  }
+  
+  @media screen and (max-width: 1100px) {
+    .contact_section_content .left_col .footer{
+      max-width:31.6rem ;
+      margin: 0 auto;
+      padding: 4.8rem 0;
+    }
+  
+  }
+  
+  @media screen and (min-width: 1100px) {
+    .contact_section_content {
+      display: flex;
+      flex-direction: row;
+    justify-content: space-between;
+    margin: 12rem 0;
+    }
+    div.img {
+      background:url("../frontend/images/contact.avif");  
+      width: 68.6rem;
+      height: 49.6rem;
+      background-repeat: no-repeat;
+      position: initial;
+      top: 0%;
+      background-position: center;
+      background-size: cover;
+  }
+  }
+  form a{
+    color: #EBE789;
+  }
+
+/*==================== FOOTER ====================*/
+.grid-footer{
+  display: grid;
+  /* gap: 1.5rem; */
+}
+.footer{
+  padding-top: 2rem;
+}
+
+.footer__container{
+  /* row-gap: 3.5rem; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+
+}
+
+.footer__bg{
+  background-color: #131313;
+  padding: 2rem 0 3rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__title{
+ background: url("/frontend/asset/G.svg");
+ width: 20.5rem;
+ height: 3.6rem;
+}
+
+.footer__subtitle{
+  font-size: var(--small-font-size);
+}
+.footer__header{
+  color: white;
+  font-size: var(--p-font);
+}
+.footer__links{
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+  align-items: flex-start;
+}
+.footer__links ul {
+ 
+list-style-type: none;
+    
+}
+
+.footer__link:hover{
+  color: var(--first-color-lighter);
+}
+
+.footer__social{
+  font-size: 1.25rem;
+  margin-right: var(--mb-1-5);
+}
+
+.footer__social:hover{
+  color: var(--first-color-lighter);
+}
+
+.footer__copy{
+  font-size: var(--p-font);
+  text-align: center;
+  color: #FFF;
+  margin-top: var(--mb-3);
+}
+div.top {
+max-width: 30rem;  
+  }
+.footer__title,
+.footer__subtitle,
+.footer__link,
+.footer__social{
+  color: #FFF;
+}
+.footer__links2{
+  display: flex;
+flex-direction: column;}
+@media screen and (max-width: 932px){
+ .footer__container .top{
+  display: flex; 
+  align-items:center;
+  flex-direction: column;
+  gap: 1rem;
+  }
+.header, .main, .footer__container{
+  display: flex; 
+  align-items:flex-start;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+  }
+  .footer__links {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+    align-items: center;
+  }
+.footer_left_col form {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-direction: column;
+}
+.footer__container{
+text-align: center;
+
+}
+}
+
+
+
+@media screen and (min-width: 768px){
+  .header, .main, .footer__container{
+    display: flex; 
+    align-items:flex-start;
+    flex-direction: row;
+
+    }
+    
+  .footer_left_col{
+    color:white;
+    font-size: var(--p-font);
+  }
+  .footer_left_col form {
+    display: flex;
+    align-items: flex-end;
+    gap: 1rem;
+    flex-direction: column;}
+
+  .footer__bg{
+    padding: 3rem 0 3.5rem;
+  }
+  .footer__links{
+    flex-direction: row;
+    column-gap: 2rem;
+  }
+  .footer__socials{
+    justify-self: flex-end;
+  }
+
+  .footer__copy{
+    margin-top: 4.5rem;
+  }
+}
+
+
+.left_col input,.footer_left_col input {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: var(--p-font);
+  line-height: 24px;
+  background-color: #ffffffe9;
+  padding: 10px;
+  width: 30rem;
+  height: 50px;
+  border-radius: .8rem;
+  color: #000000;
+
+}
+.left_col input:hover ,.footer_left_col input:hover {
+  /* border-color: var(--first-color); */
+  background-color: #f7f7f7;
+
+}
+
+.dropdown .dropbtn {
+  /* font-size: 16px;   */
+  border-radius: 8rem;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  border-radius: 1rem;
+
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+section.banner_soon{
+  background: url("/frontend/images/banner.avif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:var(--contater-moi-banner-height) ;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  color: #FFF;
+  font-size: var(--big-font-size);
+}
+.sectionSonn_content ,.section1_content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2rem;
+  margin: 7rem 0;
+}
+@media screen and (min-width: 768px){
+  .sectionSonn_content,.section1_content{
+    justify-content: space-between;
+  }
+}
+
+.sectionSonn_content a:nth-child(1) {
+  background: url('/frontend/images/saisonSoon1.jpg');
+
+}
+
+.sectionSonn_content a:nth-child(2) {
+  background: url('/frontend/images/saisonSoon2.jpg');
+}
+
+.sectionSonn_content a:nth-child(3) {
+  background: url('/frontend/images/saisonSoon3.jpg');
+}
+
+.sectionSonn_content a  ,.section1_content a{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 31.2rem;
+  height: 41.4rem;
+  object-fit: fill;
+  padding: 2.3rem;
+  border-radius: .8rem;
+}
+
+
+.sectionSonn_content a h1 ,.section1_content a h1 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 54px;
+  /* identical to box height */
+  color: #FFFFFF;
+  text-align: left;
+
+}
+
+.sectionSonn_content p ,.section1_content p{
+  display: none;
+}
+
+.sectionSonn_content a:hover p ,.section1_content a:hover p {
+  display: flex;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 3rem;
+  /* identical to box height */
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.sectionSonn_content a:hover,
+.sectionSonn_content a:hover h1 ,
+.section1_content a:hover,
+.section1_content a:hover h1{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: #FFFFFF;
+}
+.alert-danger{
+  color: #FFFFFF;
+  font-weight: 400;
+  font-family: poppins;
+  background: #6a2828;
+  padding: 1rem;
+  width: 100%;
+  height: auto;
+  font-size: 2rem;
+  border-radius: .8rem;
+  border: #910404;
+  max-width: 39rem;
+}
+
+
+
+section.banner_saison{
+  background: rgb(145,4,4);
+background: linear-gradient(180deg, rgb(0 0 0 / 25%) 0.25%, rgba(249, 19, 19, 0.06) 100.58%), url('/frontend/images/banner1.avif');
+
+  background-size: cover;
+  height:var(--contater-moi-banner-height-s) ;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  color: #FFF;
+  font-size: var(--big-font-size);
+
+  position: initial;
+  top: 0%;
+  background-position: center;
+  background-size: cover;
+  border-radius: 8px;
+}
+section.banner_saisonZanzibar{
+  background: rgb(145,4,4);
+  background: linear-gradient(180deg, rgb(0 0 0 / 25%) 0.25%, rgba(249, 19, 19, 0.06) 100.58%), url('/frontend/images/banner_zanzibar.avif');
+  background-size: cover;
+  height:var(--contater-moi-banner-height-s) ;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  color: #FFF;
+  font-size: var(--big-font-size);
+
+  position: initial;
+  top: 0%;
+  background-position: center;
+  background-size: cover;
+  border-radius: 8px;
+}
+section.banner_saisonSkii{
+  background: rgb(145,4,4);
+background: linear-gradient(180deg, rgb(0 0 0 / 25%) 0.25%, rgba(249, 19, 19, 0.06) 100.58%), url('/frontend/images/ski_banner.avif');
+
+  background-size: cover;
+  height:var(--contater-moi-banner-height-s) ;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  color: #FFF;
+  font-size: var(--big-font-size);
+
+  position: initial;
+  top: 0%;
+  background-size: cover;
+  border-radius: 8px;
+}
+/*==================== SAISON SECTION ====================*/
+
+/* LAYOUT */
+section.product_section .product_section_content {
+  /* margin: 0 auto; */
+  margin: 6rem 0;
+}
+section.product_section .product_section_content .left_col {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  max-width: 57.4rem;
+  align-items: center;
+}
+
+section.product_section .product_section_content h2 , .package_section h2{ 
+  font-size: var(--h3-font-size);
+  margin-bottom: 4rem;
+  font-weight: 700;
+}
+.formulaire , .formulaire form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+@media screen and (min-width: 977px) {
+
+  section.product_section .product_section_content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+  }
+
+  section.product_section .product_section_content .left_col {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: flex-start;
+    width: 100%;
+    gap: 6.7rem;
+
+  }
+
+  .product_section_content .right_col {
+    background: url("images/hiver2.JPG");
+    width: 40rem;
+    height: 42.8rem;
+
+    position: initial;
+    top: 0%;
+    background-position: center;
+    background-size: cover;
+    border-radius: 8px;
+  }
+}
+@media screen and (max-width: 977px) {
+  .product_section_content .right_col {
+    background: url("images/hiver2.JPG");
+    width: 34.1rem;
+    height: 32.9rem;
+
+    position: initial;
+    top: 0%;
+    background-position: center;
+    background-size: cover;
+    border-radius: 8px;
+  }
+  section.product_section .product_section_content {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+  }
+  /* section.product_section .product_section_content {
+    max-width: 65rem;
+  } */
+  section.product_section .product_section_content h2 , .package_section h2{ 
+    text-align: center;
+  }
+}
+
+/*==================== PACKAGE SECTION ====================*/
+.package_section_content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap:9rem;
+}
+.package_section_content .title{
+font-size:2.5em ;
+color: #FFFFFF;
+font-weight: 700;
+text-align: center;
+
+}
+.package_section_content .prix{
+  font-size:2.5em ;
+  color: #FF0C0C;
+  font-weight: 700;
+  text-align: center;
+
+  }
+.package_section_content .item{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  /* padding: 4rem; */
+  width: 100%;
+  max-width:54.1rem;
+  height: 70.1rem;
+  border-radius: .9rem;
+}
+.item .content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+ul.inclus {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  color: #FFF;
+  font-size: 1.6em;
+  gap: 3rem;
+  list-style-image: url("/frontend/asset/inclus.svg");
+}
+
+
+ul.noninclus{
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  color: #FFF;
+  font-size: 1.6em;
+  gap: 3rem;
+  list-style-image: url("/frontend/asset/noninclus.svg");
+
+}
+.package_section_content .item:nth-child(1){
+background: url("images/skii.png");
+background-repeat: no-repeat;
+}
+.package_section_content .item:nth-child(2){
+  background: url("images/package1.jpg");
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 977px) {
+  .package_section_content .item{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    /* padding: 4rem; */
+    width: 100%;
+    max-width:34.7rem;
+    height: 54.4rem;
+    /* border-radius: .9rem; */
+    padding: 4rem;
+  }
+}
+/*==================== SAISON SECTION DUBAIL ====================*/
+
+/*==================== SAISON SECTION DUBAIL ====================*/
+
+/* LAYOUT */
+section.product_section_dubail .product_section_dubail_content {
+  margin: 6rem 0;
+}
+section.product_section_dubail .product_section_dubail_content .left_col {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  max-width: 57.4rem;
+  align-items: center;
+}
+
+section.product_section_dubail .product_section_dubail_content h2 , .package_section h2{ 
+  font-size: var(--h3-font-size);
+  margin-bottom: 4rem;
+  font-weight: 700;
+}
+.formulaire , .formulaire form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+@media screen and (min-width: 977px) {
+
+  section.product_section_dubail .product_section_dubail_content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }  section.product_section_dubail .product_section_dubail_content .left_col {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: flex-start;
+    width: 100%;
+    gap: 6.7rem;
+  }
+
+  .product_section_dubail_content .right_col {
+    background: url("images/dubail2.webp");
+    width: 40rem;
+    height: 42.8rem;
+    position: initial;
+    top: 0%;
+    background-position: center;
+    background-size: cover;
+    border-radius: 8px;
+  }
+}
+@media screen and (max-width: 977px) {
+  .product_section_dubail_content .right_col {
+    background: url("images/dubail2.webp");
+    width: 34.1rem;
+    height: 32.9rem;
+    position: initial;
+    top: 0%;
+    background-position: center;
+    background-size: cover;
+    border-radius: 8px;
+  }
+  section.product_section_dubail .product_section_dubail_content {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+  }
+  section.product_section_dubail .product_section_dubail_content h2 , .package_section h2{ 
+    text-align: center;
+  }
+}
+
+
+
+/*==================== SAISON SECTION ZANZIBAR ====================*/
+
+/* LAYOUT */
+section.product_section_zanzibar .product_section_zanzibar_content {
+  margin: 6rem 0;
+}
+section.product_section_zanzibar .product_section_zanzibar_content .left_col {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  max-width: 57.4rem;
+  align-items: center;
+}
+
+section.product_section_zanzibar .product_section_zanzibar_content h2 , .package_section h2{ 
+  font-size: var(--h3-font-size);
+  margin-bottom: 4rem;
+  font-weight: 700;
+}
+.formulaire , .formulaire form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+@media screen and (min-width: 977px) {
+
+  section.product_section_zanzibar .product_section_zanzibar_content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }  section.product_section_zanzibar .product_section_zanzibar_content .left_col {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: flex-start;
+    width: 100%;
+    gap: 6.7rem;
+  }
+
+  .product_section_zanzibar_content .right_col {
+    background: url("images/zanzibar2.jpg");
+    width: 40rem;
+    height: 42.8rem;
+    position: initial;
+    top: 0%;
+    background-position: center;
+    background-size: cover;
+    border-radius: 8px;
+  }
+}
+@media screen and (max-width: 977px) {
+  .product_section_zanzibar_content .right_col {
+    background: url("images/zanzibar2.jpg");
+    width: 34.1rem;
+    height: 32.9rem;
+    position: initial;
+    top: 0%;
+    background-position: center;
+    background-size: cover;
+    border-radius: 8px;
+  }
+  section.product_section_zanzibar .product_section_zanzibar_content {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+  }
+  section.product_section_zanzibar .product_section_zanzibar_content h2 , .package_section h2{ 
+    text-align: center;
+  }
+}
+
+
