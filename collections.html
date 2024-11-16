@@ -182,14 +182,22 @@
             <h2>Visiter la Collection</h2>
             <p style="margin-top: 1rem;">Notre collection est accessible aux chercheurs et passionnés d'histoire sur rendez-vous.</p>
             <div class="contact-button" style="margin-top: 2rem;">
-                <a href="#contact" style="display: inline-block; background: var(--secondary-color); color: white; padding: 1rem 2rem; border-radius: 4px; text-decoration: none; transition: background-color 0.3s;">
+                <a id="appointmentButton" onclick="showMessage()" style="display: inline-block; background: var(--secondary-color); color: white; padding: 1rem 2rem; border-radius: 4px; text-decoration: none; transition: background-color 0.3s; cursor: pointer;">
                     Prendre Rendez-vous
                 </a>
             </div>
+            <p id="availabilityMessage" style="margin-top: 1rem; color: red; font-weight: bold; display: none;">
+                En raison de forte demande, nous n'avons plus de disponibilités. Réessayez ultérieurement.
+            </p>
         </section>
     </main>
     <footer>
         <p>&copy; 2024 Gigaboulet - L'histoire des boulets de canon. Tous droits réservés.</p>
     </footer>
+    <script>
+        function showMessage() {
+            document.getElementById("availabilityMessage").style.display = "block";
+        }
+    </script>
 </body>
 </html>
