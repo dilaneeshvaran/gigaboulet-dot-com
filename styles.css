@@ -6,24 +6,6 @@
     --light-bg: #ECF0F1;
 }
 
-.home-title{
-    text-decoration: none;
-    color: inherit;
-}
-
-.home-title:hover {
-    color: red;
-}
-
-.subnav{
-    color: white;
-    text-decoration: none;
-}
-
-.subnav:hover {
-    color:red;
-}
-
 * {
     margin: 0;
     padding: 0;
