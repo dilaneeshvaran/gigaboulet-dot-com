@@ -15,15 +15,6 @@
     color: red;
 }
 
-.subnav{
-    color: white;
-    text-decoration: none;
-}
-
-.subnav:hover {
-    color:red;
-}
-
 * {
     margin: 0;
     padding: 0;
