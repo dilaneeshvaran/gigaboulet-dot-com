@@ -10,3 +10,4 @@ News content is provided for free by Newscatcher API https://newscatcherapi.com/
 -add attracting colors
 -links in footer
 -ddos other pages
+-lazy load for images
