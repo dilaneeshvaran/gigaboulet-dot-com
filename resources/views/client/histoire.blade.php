@@ -1,0 +1,181 @@
+@extends('layout.master')
+@section('title')
+Gigaboulet - L'Histoire des Boulets de Canon
+@endsection
+@section('header')
+<header>
+    <div class="header-bg"></div>
+    <div class="header-content">
+        <h1>Histoire des Boulets</h1>
+        <p>L'évolution de l'artillerie à travers les âges</p>
+    </div>
+</header>
+@endsection
+@section('content')
+<main>
+    <!-- Timeline -->
+    <div class="timeline-nav" style="position: sticky; top: 0; background: var(--primary-color); padding: 1rem; z-index: 100; margin-bottom: 2rem;">
+        <ul style="display: flex; justify-content: center; gap: 2rem; list-style: none;">
+            <li><a href="#origines" style="color: white; text-decoration: none;">Origines</a></li>
+            <li><a href="#moyen-age" style="color: white; text-decoration: none;">Moyen Âge</a></li>
+            <li><a href="#renaissance" style="color: white; text-decoration: none;">Renaissance</a></li>
+            <li><a href="#age-classique" style="color: white; text-decoration: none;">Âge Classique</a></li>
+            <li><a href="#ere-napoleonienne" style="color: white; text-decoration: none;">Ère Napoléonienne</a></li>
+        </ul>
+    </div>
+
+    <!-- Introduction -->
+    <section class="history-intro" style="max-width: 800px; margin: 2rem auto; padding: 0 1rem; text-align: center;">
+        <h2>L'Évolution des Boulets de Canon</h2>
+        <p>De simples projectiles de pierre aux redoutables munitions de l'artillerie moderne, découvrez l'histoire fascinante des boulets de canon qui ont façonné les batailles et changé le cours de l'histoire.</p>
+    </section>
+
+    <!-- Main Historical Content -->
+    <div class="history-content" style="max-width: 1200px; margin: 0 auto; padding: 0 1rem;">
+        <!-- Origins Section -->
+        <section id="origines" class="history-section" style="margin-bottom: 4rem;">
+            <h2>Les Origines (XIIIe siècle)</h2>
+            <div class="history-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 2rem;">
+                <div class="history-text">
+                    <p>Les premiers boulets apparaissent en Europe au XIIIe siècle, avec l'introduction de la poudre noire venue d'Orient. Initialement taillés dans la pierre, ces projectiles primitifs marquent le début d'une révolution dans l'art de la guerre.</p>
+                    <ul style="margin-top: 1rem; margin-left: 1.5rem;">
+                        <li>Première utilisation documentée en 1132 en Chine</li>
+                        <li>Introduction en Europe par les Arabes</li>
+                        <li>Premiers boulets exclusivement en pierre</li>
+                    </ul>
+                </div>
+                <div class="history-image" style="background: var(--light-bg); aspect-ratio: 16/9; display: flex; align-items: center; justify-content: center; border-radius: 8px;">
+                    <img src={{ asset('frontend/assets/origines.jpg')}} alt="Boulets de Canon Médiévaux" class="responsive-image">
+                </div>
+            </div>
+        </section>
+
+        <!-- Middle Ages Section -->
+        <section id="moyen-age" class="history-section" style="margin-bottom: 4rem;">
+            <h2>Le Moyen Âge (XIVe - XVe siècles)</h2>
+            <div class="history-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 2rem;">
+                <div class="history-image" style="background: var(--light-bg); aspect-ratio: 16/9; display: flex; align-items: center; justify-content: center; border-radius: 8px;">
+                    <img src={{ asset('frontend/assets/moyenage.jpg')}} alt="Boulets de Canon Moyen-Age" class="responsive-image">
+                </div>
+                <div class="history-text">
+                    <p>La Guerre de Cent Ans voit l'émergence des premiers boulets en métal. Cette période marque une transition majeure dans l'artillerie, avec l'apparition des premiers canons de siège efficaces.</p>
+                    <div class="key-events" style="margin-top: 1rem;">
+                        <h4>Événements Clés :</h4>
+                        <ul style="margin-left: 1.5rem;">
+                            <li>1346 : Bataille de Crécy - Première utilisation massive de canons</li>
+                            <li>1400-1450 : Développement des boulets en fonte</li>
+                            <li>1453 : Siège de Constantinople - Rôle décisif de l'artillerie</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Renaissance Section -->
+        <section id="renaissance" class="history-section" style="margin-bottom: 4rem;">
+            <h2>La Renaissance (XVIe - XVIIe siècles)</h2>
+            <div class="history-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 2rem;">
+                <div class="history-text">
+                    <p>La Renaissance apporte une révolution dans la fabrication des boulets. La standardisation des calibres et l'amélioration des techniques de fonte permettent une production plus efficace et précise.</p>
+                    <div class="innovations" style="margin-top: 1rem;">
+                        <h4>Innovations Majeures :</h4>
+                        <ul style="margin-left: 1.5rem;">
+                            <li>Standardisation des calibres</li>
+                            <li>Introduction des boulets enchaînés pour la marine</li>
+                            <li>Premiers essais de boulets explosifs</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="history-image" style="background: var(--light-bg); aspect-ratio: 16/9; display: flex; align-items: center; justify-content: center; border-radius: 8px;">
+                    <img src={{ asset('frontend/assets/renaissance.jpg')}} alt="Boulets de Canon Renaissance" class="responsive-image">
+                </div>
+            </div>
+        </section>
+
+        <!-- Classical Age Section -->
+        <section id="age-classique" class="history-section" style="margin-bottom: 4rem;">
+            <h2>L'Âge Classique (1650-1789)</h2>
+            <div class="history-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 2rem;">
+                <div class="history-image" style="background: var(--light-bg); aspect-ratio: 16/9; display: flex; align-items: center; justify-content: center; border-radius: 8px;">
+                    <img src={{ asset('frontend/assets/classique.jpg')}} alt="Boulets de Canon Classique" class="responsive-image">
+                </div>
+                <div class="history-text">
+                    <p>L'âge classique voit l'apogée de l'artillerie traditionnelle. Sous Louis XIV, la France devient la référence européenne en matière d'artillerie.</p>
+                    <div class="developments" style="margin-top: 1rem;">
+                        <h4>Développements Majeurs :</h4>
+                        <ul style="margin-left: 1.5rem;">
+                            <li>Création du système Vallière (1732)</li>
+                            <li>Perfectionnement des techniques de production</li>
+                            <li>Développement de l'artillerie navale</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Napoleonic Era Section -->
+        <section id="ere-napoleonienne" class="history-section" style="margin-bottom: 4rem;">
+            <h2>L'Ère Napoléonienne (1789-1815)</h2>
+            <div class="history-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 2rem;">
+                <div class="history-text">
+                    <p>Sous Napoléon, l'artillerie atteint son apogée. Le système Gribeauval révolutionne l'utilisation des boulets de canon sur le champ de bataille.</p>
+                    <div class="innovations" style="margin-top: 1rem;">
+                        <h4>Innovations Tactiques :</h4>
+                        <ul style="margin-left: 1.5rem;">
+                            <li>Mobilité accrue de l'artillerie</li>
+                            <li>Standardisation complète des calibres</li>
+                            <li>Utilisation massive de l'artillerie en campagne</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="history-image" style="background: var(--light-bg); aspect-ratio: 16/9; display: flex; align-items: center; justify-content: center; border-radius: 8px;">
+                    <img src={{ asset('frontend/assets/napoleon.jpg')}} alt="Boulets de Canon Napoléonienne" class="responsive-image">
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Timeline -->
+    <section class="timeline-visual" style="max-width: 1200px; margin: 4rem auto; padding: 2rem; background: var(--light-bg); border-radius: 8px;">
+        <h2>Frise Chronologique Interactive</h2>
+        <div class="timeline" style="margin-top: 2rem; position: relative; height: 100px;">
+            <div style="width: 100%; height: 4px; background: var(--primary-color); position: absolute; top: 50%;"></div>
+            <div style="display: flex; justify-content: space-between; position: relative;">
+                <div class="timeline-point" style="text-align: center;">
+                    <div style="width: 16px; height: 16px; background: var(--primary-color); border-radius: 50%; margin: 0 auto;"></div>
+                    <p>1300</p>
+                </div>
+                <div class="timeline-point" style="text-align: center;">
+                    <div style="width: 16px; height: 16px; background: var(--primary-color); border-radius: 50%; margin: 0 auto;"></div>
+                    <p>1500</p>
+                </div>
+                <div class="timeline-point" style="text-align: center;">
+                    <div style="width: 16px; height: 16px; background: var(--primary-color); border-radius: 50%; margin: 0 auto;"></div>
+                    <p>1650</p>
+                </div>
+                <div class="timeline-point" style="text-align: center;">
+                    <div style="width: 16px; height: 16px; background: var(--primary-color); border-radius: 50%; margin: 0 auto;"></div>
+                    <p>1789</p>
+                </div>
+                <div class="timeline-point" style="text-align: center;">
+                    <div style="width: 16px; height: 16px; background: var(--primary-color); border-radius: 50%; margin: 0 auto;"></div>
+                    <p>1815</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sources & References -->
+    <section class="sources" style="max-width: 800px; margin: 4rem auto; padding: 0 1rem;">
+        <h2>Sources et Références</h2>
+        <ul style="margin-top: 1rem; margin-left: 1.5rem;">
+            <li>Archives de l'Artillerie Française</li>
+            <li>Musée de l'Armée - Invalides</li>
+            <li>Traités historiques d'artillerie</li>
+            <li>Documents d'époque napoléonienne</li>
+        </ul>
+    </section>
+</main>
+
+
+@endsection

@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ClientController;
+use App\Http\Controllers\AdobeStockController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,6 +17,9 @@ use App\Http\Controllers\ClientController;
 
 
 Route::get('/', [ClientController::class, 'acceuil']);
-Route::get('/blog', [ClientController::class, 'blog']);
-Route::get('/contact', [ClientController::class, 'contact']);
-Route::get('/about', [ClientController::class, 'about']);
+Route::get('/histoire', [ClientController::class, 'histoire']);
+Route::get('/types', [ClientController::class, 'types']);
+Route::get('/actualites', [ClientController::class, 'actualites']);
+Route::get('/collections', [ClientController::class, 'collections']);
+Route::get('/sitemap.xml', [ClientController::class, 'sitemap']);
+
