@@ -24,16 +24,16 @@ Gigaboulet - L'Histoire des Boulets de Canon
             <div class="collection-content" style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 1.5rem;">
                 <div class="collection-images" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
                     <div style="background: white; aspect-ratio: 1; display: flex; align-items: center; justify-content: center; border-radius: 4px;">
-                        <img src={{ asset('frontend/assets/collections/col1.jpg' )}} alt="Boulets de Canon Médiévale" class="responsive-image">
+                        <img src={{ asset('frontend/assets/collections/col1.avif' )}} alt="Boulets de Canon Médiévale" class="responsive-image">
                     </div>
                     <div style="background: white; aspect-ratio: 1; display: flex; align-items: center; justify-content: center; border-radius: 4px;">
-                        <img src={{ asset('frontend/assets/collections/col2.jpg' )}} alt="Boulets de Canon Médiévale" class="responsive-image">
+                        <img src={{ asset('frontend/assets/collections/col2.avif' )}} alt="Boulets de Canon Médiévale" class="responsive-image">
                     </div>
                     <div style="background: white; aspect-ratio: 1; display: flex; align-items: center; justify-content: center; border-radius: 4px;">
-                        <img src={{ asset('frontend/assets/collections/col3.jpg' )}} alt="Boulets de Canon Médiévale" class="responsive-image">
+                        <img src={{ asset('frontend/assets/collections/col3.avif' )}} alt="Boulets de Canon Médiévale" class="responsive-image">
                     </div>
                     <div style="background: white; aspect-ratio: 1; display: flex; align-items: center; justify-content: center; border-radius: 4px;">
-                        <img src={{ asset('frontend/assets/collections/col5.jpg' )}} alt="Boulets de Canon Médiévale" class="responsive-image">
+                        <img src={{ asset('frontend/assets/collections/col5.avif' )}} alt="Boulets de Canon Médiévale" class="responsive-image">
                     </div>
                 </div>
                 <div class="collection-description">
@@ -60,16 +60,16 @@ Gigaboulet - L'Histoire des Boulets de Canon
                 </div>
                 <div class="collection-images" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
                     <div style="background: white; aspect-ratio: 1; display: flex; align-items: center; justify-content: center; border-radius: 4px;">
-                        <img src={{ asset('frontend/assets/collections/col6.jpg' )}} alt="Boulets de Canon Renaissance" class="responsive-image">
+                        <img src={{ asset('frontend/assets/collections/col6.avif' )}} alt="Boulets de Canon Renaissance" class="responsive-image">
                     </div>
                     <div style="background: white; aspect-ratio: 1; display: flex; align-items: center; justify-content: center; border-radius: 4px;">
-                        <img src={{ asset('frontend/assets/collections/col7.jpg' )}} alt="Boulets de Canon Renaissance" class="responsive-image">
+                        <img src={{ asset('frontend/assets/collections/col7.avif' )}} alt="Boulets de Canon Renaissance" class="responsive-image">
                     </div>
                     <div style="background: white; aspect-ratio: 1; display: flex; align-items: center; justify-content: center; border-radius: 4px;">
-                        <img src={{ asset('frontend/assets/collections/col8.jpg' )}} alt="Boulets de Canon Renaissance" class="responsive-image">
+                        <img src={{ asset('frontend/assets/collections/col8.avif' )}} alt="Boulets de Canon Renaissance" class="responsive-image">
                     </div>
                     <div style="background: white; aspect-ratio: 1; display: flex; align-items: center; justify-content: center; border-radius: 4px;">
-                        <img src={{ asset('frontend/assets/collections/col9.jpg' )}} alt="Boulets de Canon Renaissance" class="responsive-image">
+                        <img src={{ asset('frontend/assets/collections/col9.avif' )}} alt="Boulets de Canon Renaissance" class="responsive-image">
                     </div>
                 </div>
             </div>
@@ -80,16 +80,16 @@ Gigaboulet - L'Histoire des Boulets de Canon
             <div class="collection-content" style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 1.5rem;">
                 <div class="collection-images" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
                     <div style="background: white; aspect-ratio: 1; display: flex; align-items: center; justify-content: center; border-radius: 4px;">
-                        <img src={{ asset('frontend/assets/collections/col4.jpg' )}} alt="Boulets de Canon Napoleon" class="responsive-image">
+                        <img src={{ asset('frontend/assets/collections/col4.avif' )}} alt="Boulets de Canon Napoleon" class="responsive-image">
                     </div>
                     <div style="background: white; aspect-ratio: 1; display: flex; align-items: center; justify-content: center; border-radius: 4px;">
-                        <img src={{ asset('frontend/assets/collections/col10.jpg' )}} alt="Boulets de Canon Napoleon" class="responsive-image">
+                        <img src={{ asset('frontend/assets/collections/col10.avif' )}} alt="Boulets de Canon Napoleon" class="responsive-image">
                     </div>
                     <div style="background: white; aspect-ratio: 1; display: flex; align-items: center; justify-content: center; border-radius: 4px;">
-                        <img src={{ asset('frontend/assets/collections/col13.jpg' )}} alt="Boulets de Canon Napoleon" class="responsive-image">
+                        <img src={{ asset('frontend/assets/collections/col13.avif' )}} alt="Boulets de Canon Napoleon" class="responsive-image">
                     </div>
                     <div style="background: white; aspect-ratio: 1; display: flex; align-items: center; justify-content: center; border-radius: 4px;">
-                        <img src={{ asset('frontend/assets/collections/col17.jpg' )}} alt="Boulets de Canon Napoleon" class="responsive-image">
+                        <img src={{ asset('frontend/assets/collections/col17.avif' )}} alt="Boulets de Canon Napoleon" class="responsive-image">
                     </div>
                 </div>
                 <div class="collection-description">
@@ -116,16 +116,16 @@ Gigaboulet - L'Histoire des Boulets de Canon
                 </div>
                 <div class="collection-images" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
                     <div style="background: white; aspect-ratio: 1; display: flex; align-items: center; justify-content: center; border-radius: 4px;">
-                        <img src={{ asset('frontend/assets/collections/col18.jpg' )}} alt="Boulets de Canon Remarquable" class="responsive-image">
+                        <img src={{ asset('frontend/assets/collections/col18.avif' )}} alt="Boulets de Canon Remarquable" class="responsive-image">
                     </div>
                     <div style="background: white; aspect-ratio: 1; display: flex; align-items: center; justify-content: center; border-radius: 4px;">
-                        <img src={{ asset('frontend/assets/collections/col14.jpg' )}} alt="Boulets de Canon Remarquable" class="responsive-image">
+                        <img src={{ asset('frontend/assets/collections/col14.avif' )}} alt="Boulets de Canon Remarquable" class="responsive-image">
                     </div>
                     <div style="background: white; aspect-ratio: 1; display: flex; align-items: center; justify-content: center; border-radius: 4px;">
-                        <img src={{ asset('frontend/assets/collections/col15.jpg' )}} alt="Boulets de Canon Remarquable" class="responsive-image">
+                        <img src={{ asset('frontend/assets/collections/col15.avif' )}} alt="Boulets de Canon Remarquable" class="responsive-image">
                     </div>
                     <div style="background: white; aspect-ratio: 1; display: flex; align-items: center; justify-content: center; border-radius: 4px;">
-                        <img src={{ asset('frontend/assets/collections/col16.jpg' )}} alt="Boulets de Canon Remarquable" class="responsive-image">
+                        <img src={{ asset('frontend/assets/collections/col16.avif' )}} alt="Boulets de Canon Remarquable" class="responsive-image">
                     </div>
                 </div>
             </div>
@@ -144,13 +144,13 @@ Gigaboulet - L'Histoire des Boulets de Canon
             </ul>
             <div class="conservation-images" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-top: 2rem;">
                 <div style="background: white; aspect-ratio: 16/9; display: flex; align-items: center; justify-content: center; border-radius: 4px;">
-                    <img src={{ asset('frontend/assets/collections/col12.jpg' )}} alt="Boulets de Canon Restauration" class="responsive-image">
+                    <img src={{ asset('frontend/assets/collections/col12.avif' )}} alt="Boulets de Canon Restauration" class="responsive-image">
                 </div>
                 <div style="background: white; aspect-ratio: 16/9; display: flex; align-items: center; justify-content: center; border-radius: 4px;">
-                    <img src={{ asset('frontend/assets/collections/col11.jpg' )}} alt="Boulets de Canon Concervation" class="responsive-image">
+                    <img src={{ asset('frontend/assets/collections/col11.avif' )}} alt="Boulets de Canon Concervation" class="responsive-image">
                 </div>
                 <div style="background: white; aspect-ratio: 16/9; display: flex; align-items: center; justify-content: center; border-radius: 4px;">
-                    <img src={{ asset('frontend/assets/collections/col.jpg' )}} alt="Boulets de Canon Atelier" class="responsive-image">
+                    <img src={{ asset('frontend/assets/collections/col.avif' )}} alt="Boulets de Canon Atelier" class="responsive-image">
                 </div>
             </div>
         </div>

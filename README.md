@@ -5,7 +5,6 @@ We selected a unique, previously unused domain name "gigaboulet" and created a w
 News content is provided for free by Newscatcher API https://newscatcherapi.com/
 
 //TODO
--jpg/png to svg
 -change to a good font
 -add attracting colors
 -links in footer

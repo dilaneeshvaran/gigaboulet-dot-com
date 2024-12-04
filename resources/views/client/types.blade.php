@@ -26,7 +26,7 @@ Gigaboulet - L'Histoire des Boulets de Canon
                     </ul>
                 </div>
                 <div class="type-image" style="background: var(--light-bg); aspect-ratio: 4/3; display: flex; align-items: center; justify-content: center; border-radius: 8px;">
-                    <img src={{ asset('frontend/assets/bouletplein.jpg')}} alt="Boulets de Canon Plein" class="responsive-image">
+                    <img src={{ asset('frontend/assets/bouletplein.avif')}} alt="Boulets de Canon Plein" class="responsive-image">
                 </div>
             </div>
         </article>
@@ -35,7 +35,7 @@ Gigaboulet - L'Histoire des Boulets de Canon
             <h2>Boulet Ramé</h2>
             <div class="type-content" style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: center;">
                 <div class="type-image" style="background: var(--light-bg); aspect-ratio: 4/3; display: flex; align-items: center; justify-content: center; border-radius: 8px;">
-                    <img src={{ asset('frontend/assets/barshot.jpg')}} alt="Boulets de Canon Ramé" class="responsive-image">
+                    <img src={{ asset('frontend/assets/barshot.avif')}} alt="Boulets de Canon Ramé" class="responsive-image">
                 </div>
                 <div class="type-description">
                     <p>Le boulet ramé consistait en deux demi-boulets reliés par une barre de fer. Particulièrement redoutable en combat naval, il était conçu pour déchirer les voiles et briser les mâts des navires ennemis.</p>
@@ -60,7 +60,7 @@ Gigaboulet - L'Histoire des Boulets de Canon
                     </ul>
                 </div>
                 <div class="type-image" style="background: var(--light-bg); aspect-ratio: 4/3; display: flex; align-items: center; justify-content: center; border-radius: 8px;">
-                    <img src={{ asset('frontend/assets/chained.jpg')}} alt="Boulets de Canon Chainé" class="responsive-image">
+                    <img src={{ asset('frontend/assets/chained.avif')}} alt="Boulets de Canon Chainé" class="responsive-image">
                 </div>
             </div>
         </article>
@@ -69,7 +69,7 @@ Gigaboulet - L'Histoire des Boulets de Canon
             <h2>Boulet Explosif</h2>
             <div class="type-content" style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: center;">
                 <div class="type-image" style="background: var(--light-bg); aspect-ratio: 4/3; display: flex; align-items: center; justify-content: center; border-radius: 8px;">
-                    <img src={{ asset('frontend/assets/explosif.jpg')}} alt="Boulets de Canon Explosif" class="responsive-image">
+                    <img src={{ asset('frontend/assets/explosif.avif')}} alt="Boulets de Canon Explosif" class="responsive-image">
                 </div>
                 <div class="type-description">
                     <p>Les boulets explosifs, ou obus, représentaient une évolution majeure dans l'artillerie. Remplis de poudre noire et équipés d'une mèche, ils explosaient à l'impact ou après un délai calculé.</p>

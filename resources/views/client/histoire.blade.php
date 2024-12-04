@@ -45,7 +45,7 @@ Gigaboulet - L'Histoire des Boulets de Canon
                     </ul>
                 </div>
                 <div class="history-image" style="background: var(--light-bg); aspect-ratio: 16/9; display: flex; align-items: center; justify-content: center; border-radius: 8px;">
-                    <img src={{ asset('frontend/assets/origines.jpg')}} alt="Boulets de Canon Médiévaux" class="responsive-image">
+                    <img src={{ asset('frontend/assets/origines.avif')}} alt="Boulets de Canon Médiévaux" class="responsive-image">
                 </div>
             </div>
         </section>
@@ -55,7 +55,7 @@ Gigaboulet - L'Histoire des Boulets de Canon
             <h2>Le Moyen Âge (XIVe - XVe siècles)</h2>
             <div class="history-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 2rem;">
                 <div class="history-image" style="background: var(--light-bg); aspect-ratio: 16/9; display: flex; align-items: center; justify-content: center; border-radius: 8px;">
-                    <img src={{ asset('frontend/assets/moyenage.jpg')}} alt="Boulets de Canon Moyen-Age" class="responsive-image">
+                    <img src={{ asset('frontend/assets/moyenage.avif')}} alt="Boulets de Canon Moyen-Age" class="responsive-image">
                 </div>
                 <div class="history-text">
                     <p>La Guerre de Cent Ans voit l'émergence des premiers boulets en métal. Cette période marque une transition majeure dans l'artillerie, avec l'apparition des premiers canons de siège efficaces.</p>
@@ -87,7 +87,7 @@ Gigaboulet - L'Histoire des Boulets de Canon
                     </div>
                 </div>
                 <div class="history-image" style="background: var(--light-bg); aspect-ratio: 16/9; display: flex; align-items: center; justify-content: center; border-radius: 8px;">
-                    <img src={{ asset('frontend/assets/renaissance.jpg')}} alt="Boulets de Canon Renaissance" class="responsive-image">
+                    <img src={{ asset('frontend/assets/renaissance.avif')}} alt="Boulets de Canon Renaissance" class="responsive-image">
                 </div>
             </div>
         </section>
@@ -97,7 +97,7 @@ Gigaboulet - L'Histoire des Boulets de Canon
             <h2>L'Âge Classique (1650-1789)</h2>
             <div class="history-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 2rem;">
                 <div class="history-image" style="background: var(--light-bg); aspect-ratio: 16/9; display: flex; align-items: center; justify-content: center; border-radius: 8px;">
-                    <img src={{ asset('frontend/assets/classique.jpg')}} alt="Boulets de Canon Classique" class="responsive-image">
+                    <img src={{ asset('frontend/assets/classique.avif')}} alt="Boulets de Canon Classique" class="responsive-image">
                 </div>
                 <div class="history-text">
                     <p>L'âge classique voit l'apogée de l'artillerie traditionnelle. Sous Louis XIV, la France devient la référence européenne en matière d'artillerie.</p>
@@ -129,7 +129,7 @@ Gigaboulet - L'Histoire des Boulets de Canon
                     </div>
                 </div>
                 <div class="history-image" style="background: var(--light-bg); aspect-ratio: 16/9; display: flex; align-items: center; justify-content: center; border-radius: 8px;">
-                    <img src={{ asset('frontend/assets/napoleon.jpg')}} alt="Boulets de Canon Napoléonienne" class="responsive-image">
+                    <img src={{ asset('frontend/assets/napoleon.avif')}} alt="Boulets de Canon Napoléonienne" class="responsive-image">
                 </div>
             </div>
         </section>

@@ -12,12 +12,12 @@
     <link rel="icon" href={{ asset('frontend/favicon.ico" type="image/x-icon')}} />
     <meta property="og:title" content='frontend/Histoire des Boulets de Canon | Gigaboulet'>
     <meta property="og:description" content="Découvrez l'histoire fascinante des boulets de canon à travers les siècles.">
-    <meta property="og:image" content={{ asset('https://www.gigaboulet.com/assets/twitterimage.jpg')}}>
+    <meta property="og:image" content={{ asset('https://www.gigaboulet.com/assets/twitterimage.avif')}}>
     <meta property="og:url" content={{ asset('https://www.gigaboulet.com/histoire.html')}}>
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Histoire des Boulets de Canon | Gigaboulet">
     <meta name="twitter:description" content="Découvrez l'histoire fascinante des boulets de canon à travers les siècles.">
-    <meta name="twitter:image" content={{ asset('https://www.gigaboulet.com/assets/twitterimage.jpg')}}>
+    <meta name="twitter:image" content={{ asset('https://www.gigaboulet.com/assets/twitterimage.avif')}}>
     <meta name="robots" content="index, follow">
     <meta name="language" content="fr">
     <link rel="alternate" hreflang="fr" href={{ asset('https://www.gigaboulet.com')}}>
@@ -27,7 +27,7 @@
           "@context": "https://schema.org",
           "@type": "Article",
           "headline": "Types de Boulets de Canon Historiques",
-          "image": "https://www.gigaboulet.com/assets/bouletplein.jpg",
+          "image": "https://www.gigaboulet.com/assets/bouletplein.avif",
           "author": {
             "@type": "Organization",
             "name": "Gigaboulet"
