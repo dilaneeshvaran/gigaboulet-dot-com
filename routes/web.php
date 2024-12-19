@@ -6,8 +6,9 @@ use App\Http\Controllers\ClientController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ImageController;
-use App\Http\Controllers\GalerieController;
+use App\Http\Controllers\PostController;
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\PostPageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,21 +22,25 @@ use App\Http\Controllers\CategoryController;
 */
 
 // client Contoller page
+
+Route::get('/', [ClientController::class, 'acceuil']);
+Route::get('/histoire', [ClientController::class, 'histoire']);
+Route::get('/types', [ClientController::class, 'types']);
+Route::get('/articleType',[ClientController::class, 'articleType']);
+Route::get('/articleHistoire',[ClientController::class, 'articleHistoire']);
+Route::get('/apropos',[ClientController::class, 'apropos']);
+Route::get('/contact',[ClientController::class, 'contact']);
 Route::get('/sitemap.xml', [ClientController::class, 'sitemap']);
 
-Route::get('/', [ClientController::class,'home']);
-Route::get('/galerie', [ClientController::class,'galerie']);
-Route::get('/contact', [ClientController::class,'contact']);
 
-Route::get('/dubaiSoon', [ClientController::class,'dubaiSoon']);
-Route::get('/zanzibarSoon', [ClientController::class,'zanzibarSoon']);
-Route::get('/portugalSoon', [ClientController::class,'portugalSoon']);
-Route::get('/skiSoon', [ClientController::class,'skiSoon']);
+Route::get('/blog', [ClientController::class,'blog']);
+Route::get('/blog/{post:slug}', PostPageController::class)->name('post.show');  // Route pour afficher un article spécifique
 
-Route::get('/ski', [ClientController::class,'ski']);
-Route::get('/dubai', [ClientController::class,'dubai']);
-Route::get('/zanzibar', [ClientController::class,'zanzibar']);
-Route::get('/portugal', [ClientController::class,'portugal']);
+Route::get('/collections', [ClientController::class,'collections']);
+Route::get('/collections/{post:slug}', PostPageController::class)->name('collections.show');  // Route pour afficher un article spécifique
+
+Route::get('/musees', [ClientController::class,'musees']);
+Route::get('/musees/{post:slug}', PostPageController::class)->name('musees.show'); 
 
 
 Route::post('/contacts', [ContactController::class, 'store']);
@@ -61,11 +66,11 @@ Route::prefix('admin')->middleware('auth', 'isAdmin')->group(function(){
     Route::get('/dashboard1', [AdminController::class,'dashboard1']);
 
     Route::get('/categories', [AdminController::class,'categories']);
-    Route::get('/addgalerie', [AdminController::class,'addgalerie']);
-    Route::get('/galeries', [AdminController::class,'galeries']);
+    Route::get('/addpost', [AdminController::class,'addpost']);
+    Route::get('/posts', [AdminController::class,'posts']);
     Route::get('/addimage', [AdminController::class,'addimage']);
     Route::get('/images', [AdminController::class,'images']);
-    Route::get('/orders', [AdminController::class,'orders']);
+    Route::get('/posts', [AdminController::class,'posts']);
 });
 // category Controller 
 
@@ -76,13 +81,13 @@ Route::put('admin/updatecategory/{id}', [CategoryController::class,'updatecatego
 
 // slider Controller 
 
-Route::post('admin/savegalerie', [GalerieController::class,'savegalerie']);
-Route::delete('admin/deletegalerie/{id}', [GalerieController::class,'deletegalerie']);
-Route::get('admin/editgalerie/{id}', [GalerieController::class,'editgalerie']);
-Route::put('admin/updategalerie/{id}', [GalerieController::class,'updategalerie']);
-Route::put('admin/unactivategalerie/{id}', [GalerieController::class,'unactivategalerie']);
+Route::post('admin/savepost', [PostController::class,'savepost']);
+Route::delete('admin/deletepost/{id}', [PostController::class,'deletepost']);
+Route::get('admin/editpost/{id}', [PostController::class,'editpost']);
+Route::put('admin/updatepost/{id}', [PostController::class,'updatepost']);
+Route::put('admin/unactivatepost/{id}', [PostController::class,'unactivatepost']);
 
-Route::put('admin/activategalerie/{id}', [GalerieController::class,'activategalerie']);
+Route::put('admin/activatepost/{id}', [PostController::class,'activatepost']);
 
 // image Controller
 Route::post('/admin/saveimage', [ImageController::class,'saveimage']);

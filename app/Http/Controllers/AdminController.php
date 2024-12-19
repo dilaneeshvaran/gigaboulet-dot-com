@@ -4,10 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use App\Models\Category;
-use App\Models\Galerie;
+use App\Models\Post;
 use App\Models\Image;
-use App\Models\Order;
-
 use Illuminate\Http\Request;
 
 class AdminController extends Controller
@@ -25,23 +23,18 @@ class AdminController extends Controller
         return view('admin.categories')->with("categories",$categories);
     }
     
-    public function addgalerie () {
-        return view('admin.addgalerie');
-    }
-    public function galeries () {
-        $galeries=Galerie::get();
-        return view('admin.galerie')->with("galeries",$galeries);
-    }
-    public function addimage () {
+ 
+    public function addpost () {
         $categories=Category::get();
 
-        return view('admin.addimage')->with('categories',$categories);
+        return view('admin.addpost')->with('categories',$categories);
     }
-    public function images () {
-        $images=Image::get();
+    public function posts () {
+        $posts=Post::get();
+        return view('admin.posts')->with("posts",$posts);
+    }
 
-        return view('admin.images')->with('images',$images);
-    }
+
     public function editimage () {
         $images=Image::get();
 

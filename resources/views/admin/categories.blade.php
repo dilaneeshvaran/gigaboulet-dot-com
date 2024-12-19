@@ -46,6 +46,8 @@
                   <tr>
                     <th>Num.</th>
                     <th>Category Name</th>
+                    <th>Category Slug</th>
+
                     <th>Actions</th>
                   </tr>
                   </thead>
@@ -53,8 +55,9 @@
                     @foreach ($categories as $category)
                     <tr>
                       <td>{{$increment}}</td>
-                      <td>{{$category->category_name}}
-                      </td>
+                      <td>{{$category->name}}</td>
+                      <td>{{$category->slug}}</td>
+
                       <td >
                         <a href="  {{url('admin/editcategory',$category->id)}}" class="btn btn-primary"><i class="nav-icon fas fa-edit"></i></a>
 

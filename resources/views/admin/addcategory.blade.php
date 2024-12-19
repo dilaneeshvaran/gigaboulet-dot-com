@@ -45,9 +45,14 @@
                 <div class="card-body">
                   <div class="form-group">
                     <label for="exampleInputEmail1">Category name</label>
-                    <input type="text" name="category_name" class="form-control" id="exampleInputEmail1" placeholder="Enter category" required>
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Enter category" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="slug">Category slug</label>
+                    <input type="text" name="slug" class="form-control" id="slug" placeholder="Enter Category slug" required readonly>
                   </div>
                 </div>
+
                 <!-- /.card-body -->
                 <div class="card-footer">
                   <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
@@ -69,4 +74,17 @@
     </section>
     <!-- /.content -->
   </div>
+  @section('scripts')
+<script>
+// Fonction pour générer un slug à partir du titre
+document.getElementById('name').addEventListener('input', function() {
+    let title = this.value; // Récupérer la valeur du titre
+    let slug = title.toLowerCase()
+                    .replace(/[^\w\s-]/g, '')  // Supprimer les caractères non alphanumériques
+                    .replace(/\s+/g, '-')      // Remplacer les espaces par des tirets
+                    .replace(/-+/g, '-');      // Remplacer plusieurs tirets par un seul
+    document.getElementById('slug').value = slug; // Mettre à jour le champ slug
+});
+</script>
+@endsection
 @endsection

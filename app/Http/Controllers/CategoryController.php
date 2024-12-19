@@ -13,10 +13,12 @@ class CategoryController extends Controller
 
     public function savecategory(Request $request){
         $category =new Category();
-        // la category_name dans la bd auras la valeur de l'input appelle category_name 
-        $category->category_name = $request->input('category_name');
+        // la name dans la bd auras la valeur de l'input appelle name 
+        $category->name = $request->input('name');
+        $category->slug = $request->input('slug');
+
         $category->save();
-        return back()->with("status","Vtore categorie a ete cree avec succes ");
+        return back()->with("status","Votre categorie a ete cree avec succes ");
     }
 
     public function deletecategory($id){
@@ -30,7 +32,7 @@ class CategoryController extends Controller
     }
     public function updatecategory($id, Request $request){
         $category= Category::find ($id);
-        $category->category_name=$request->input('category_name');
+        $category->name=$request->input('name');
         $category->update();
         return redirect('admin/categories')->with("status","votre categorie a ete modifier   avec succes ");
 

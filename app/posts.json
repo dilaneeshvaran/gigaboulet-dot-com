@@ -1,0 +1,22 @@
+[
+    {
+        "user_id": 1,
+        "category_id": 1,
+        "title": "Mon premier article",
+        "slug": "mon-premier-article",
+        "excerpt": "C'est un extrait de mon premier article",
+        "content": "Voici le contenu détaillé de mon premier article",
+        "post_image": "image1.jpg",
+        "published_at": "2024-12-19 10:00:00"
+    },
+    {
+        "user_id": 1,
+        "category_id": 1,
+        "title": "Un autre article",
+        "slug": "un-autre-article",
+        "excerpt": "Extrait pour l'autre article",
+        "content": "Contenu de l'autre article",
+        "post_image": "image2.jpg",
+        "published_at": "2024-12-19 12:00:00"
+    }
+]

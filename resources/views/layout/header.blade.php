@@ -1,50 +1,33 @@
-<header>
-  <div class="wrapper navbar">
-      <a href='/' class="logo">
-          <div class="svg"></div>
-      </a>
-      <div class="right">
-          <nav>
-              <!--  <img src="assets/close.svg"  alt="Close Menu"> -->
-              {{-- <svg viewBox="0 0 512 512"  width="40" >
-                  <path d="M464 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h416c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm-83.6 290.5c4.8 4.8 4.8 12.6 0 17.4l-40.5 40.5c-4.8 4.8-12.6 4.8-17.4 0L256 313.3l-66.5 67.1c-4.8 4.8-12.6 4.8-17.4 0l-40.5-40.5c-4.8-4.8-4.8-12.6 0-17.4l67.1-66.5-67.1-66.5c-4.8-4.8-4.8-12.6 0-17.4l40.5-40.5c4.8-4.8 12.6-4.8 17.4 0l66.5 67.1 66.5-67.1c4.8-4.8 12.6-4.8 17.4 0l40.5 40.5c4.8 4.8 4.8 12.6 0 17.4L313.3 256l67.1 66.5z" />
-              </svg> --}}
-              <svg width="28" height="28" class="close" title="window-close" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M14 0C6.2 0 0 6.2 0 14C0 21.8 6.2 28 14 28C21.8 28 28 21.8 28 14C28 6.2 21.8 0 14 0ZM19.4 21L14 15.6L8.6 21L7 19.4L12.4 14L7 8.6L8.6 7L14 12.4L19.4 7L21 8.6L15.6 14L21 19.4L19.4 21Z" fill="#910404"/>
-              </svg>
-              <ul>
-                  <li><a href='/'class="{{request()->is('/')? 'active' :''}}">Accueil </a></li>
-                  <div class="dropdown" class="{{request()->is('/saison')? 'active' :''}}">
-                    <li> 
-                        <a class="dropbtn">Saison 
-                        <i class="fa fa-caret-down"></i>
-                        </a>
-                     </li>
-                    <div class="dropdown-content">
-                      <a href="/ski">Ski</a>
-                      <a href="/dubai">Dubai</a>
-                      <a rel="canonical" href="/zanzibar">Zanzibar</a>
-                      {{-- <a href="/saison">Portugal</a> --}}
-                    </div>
-                  </div> 
-                  <li><a  href='/galerie' class="{{request()->is('galerie')? 'active' :''}}" >Galerie</a></li>
-              </ul>
-          </nav>
-          <div class="mobile-cart-menu">
-            <a  href="/contact" class="cart ">
-              <p >Reserver</p>
-            </a>
-          </div>
-          <svg width="42" height="43" viewBox="0 0 42 43" class="menu-btn"   title="align-right" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g clip-path="url(#clip0_863_713)">
-            <path d="M13.125 10.2771C12.578 10.2771 12.0534 10.4944 11.6666 10.8812C11.2798 11.268 11.0625 11.7926 11.0625 12.3396C11.0625 12.8866 11.2798 13.4112 11.6666 13.798C12.0534 14.1848 12.578 14.4021 13.125 14.4021H29.6252C30.1722 14.4021 30.6968 14.1848 31.0836 13.798C31.4704 13.4112 31.6877 12.8866 31.6877 12.3396C31.6877 11.7926 31.4704 11.268 31.0836 10.8812C30.6968 10.4944 30.1722 10.2771 29.6252 10.2771H13.125ZM11.0625 20.6248C11.0625 20.0777 11.2798 19.5531 11.6666 19.1663C12.0534 18.7795 12.578 18.5622 13.125 18.5622H29.6252C30.1722 18.5622 30.6968 18.7795 31.0836 19.1663C31.4704 19.5531 31.6877 20.0777 31.6877 20.6248C31.6877 21.1718 31.4704 21.6964 31.0836 22.0832C30.6968 22.47 30.1722 22.6873 29.6252 22.6873H13.125C12.578 22.6873 12.0534 22.47 11.6666 22.0832C11.2798 21.6964 11.0625 21.1718 11.0625 20.6248ZM13.125 26.8474C12.578 26.8474 12.0534 27.0647 11.6666 27.4515C11.2798 27.8383 11.0625 28.3629 11.0625 28.9099C11.0625 29.4569 11.2798 29.9815 11.6666 30.3683C12.0534 30.7551 12.578 30.9724 13.125 30.9724H29.6252C30.1722 30.9724 30.6968 30.7551 31.0836 30.3683C31.4704 29.9815 31.6877 29.4569 31.6877 28.9099C31.6877 28.3629 31.4704 27.8383 31.0836 27.4515C30.6968 27.0647 30.1722 26.8474 29.6252 26.8474H13.125Z" fill="#910404"/>
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M42.0004 20.6247C42.0004 32.016 32.7665 41.2499 21.3752 41.2499C9.9839 41.2499 0.75 32.016 0.75 20.6247C0.75 9.23341 9.9839 -0.000488281 21.3752 -0.000488281C32.7665 -0.000488281 42.0004 9.23341 42.0004 20.6247ZM37.8754 20.6247C37.8754 25.0008 36.137 29.1977 33.0426 32.2921C29.9482 35.3865 25.7513 37.1249 21.3752 37.1249C16.9991 37.1249 12.8022 35.3865 9.70782 32.2921C6.61344 29.1977 4.87504 25.0008 4.87504 20.6247C4.87504 16.2486 6.61344 12.0517 9.70782 8.95734C12.8022 5.86296 16.9991 4.12455 21.3752 4.12455C25.7513 4.12455 29.9482 5.86296 33.0426 8.95734C36.137 12.0517 37.8754 16.2486 37.8754 20.6247Z" fill="#910404"/>
-            </g>
-            <defs>
-            <clipPath id="clip0_863_713">
-            <rect width="42" height="43" fill="white"/>
-            </clipPath>
-            </defs>
-          </svg>
-      </div>
-</header>
+@yield('header')
+<nav>
+    <ul>
+        <li><a href="/">Accueil</a></li>
+        <li><a href="histoire">Histoire du Gigaboulet</a></li>
+        <li class="dropdown-menu">
+            <a href="/blog">Blog</a>
+            <ul class="dropdown">
+                @foreach ($blog as $item)
+                  <li><a href="/blog/{{ $item->slug }}">{{ $item->excerpt }}</a></li>
+                @endforeach  
+            </ul>
+        </li>
+        <li class="dropdown-menu">
+            <a href="/collections">Collection</a>
+            <ul class="dropdown">
+                @foreach ($collection as $item)
+                  <li><a href="/collections/{{ $item->slug }}">{{ $item->excerpt }}</a></li>
+                @endforeach 
+            </ul>
+        </li>       
+        <li class="dropdown-menu">
+            <a href="/musees">Musées</a>
+            <ul class="dropdown">
+                @foreach ($muses as $item)
+                  <li><a href="/musees/{{ $item->slug }}">{{ $item->excerpt }}</a></li>
+                @endforeach 
+            </ul>
+        </li>  
+        <li><a href="/apropos">A propos</a></li>
+        <li><a href="/contact">Contact</a></li>
+    </ul>
+</nav>
